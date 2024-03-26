@@ -1,6 +1,5 @@
 import { Button, Box, Grid,styled, Paper} from '@mui/material';
 import Sidebar from "../components/SideBar"
-import { useTheme, } from '@mui/material/styles';
 import { Link } from 'react-router-dom'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -18,7 +17,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 
 const Notifications = () => {
-  const theme = useTheme();
+  
   return (
   <Box m="20px">
     <Box height="75vh">
@@ -47,7 +46,7 @@ const Notifications = () => {
                 Stacy has just posted an event.
                 <Button 
                     component={Link} 
-                    to={'#'}
+                    to={'/opportunity'}
                     variant='contained'
                     sx={{
                         ml: 48,
@@ -94,7 +93,7 @@ const Notifications = () => {
                 Macy Miller has just posted an event.
                 <Button 
                     component={Link} 
-                    to={'#'}
+                    to={'/opportunity'}
                     variant='contained'
                     sx={{
                         ml: 48,
@@ -140,7 +139,7 @@ const Notifications = () => {
               Stacy has just posted an event.
               <Button 
                     component={Link} 
-                    to={'#'}
+                    to={'/opportunity'}
                     variant='contained'
                     sx={{
                         ml: 48,
@@ -185,7 +184,7 @@ const Notifications = () => {
               Macy Miller has just posted an event.
               <Button 
                     component={Link} 
-                    to={'#'}
+                    to={'/opportunity'}
                     variant='contained'
                     sx={{
                         ml: 48,
@@ -265,7 +264,7 @@ const Notifications = () => {
                         </Typography>  
                         <Button 
                     component={Link} 
-                    to={'#'}
+                    to={'/rsvp'}
                     variant='contained'
                     sx={{
                         

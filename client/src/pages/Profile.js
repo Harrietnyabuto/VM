@@ -1,24 +1,15 @@
 import React from 'react'
-//import { Box,styled, Paper} from '@mui/material';
 import Sidebar from "../components/SideBar"
-import Avatar from '@mui/material/Avatar';
+import { Link } from 'react-router-dom'
 import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider  } from '@mui/material/styles';
 import { Button, Box, Grid,styled, IconButton,Paper} from '@mui/material';
 import { useTheme, } from '@mui/material/styles';
-import Link from '@mui/material/Link';
-import Card from '@mui/material/Card';
+//import Link from '@mui/material/Link';
 import {   Stack, } from '@mui/material'
-import Title from '../components/Title'
-import Paragraph from '../components/Paragraph'
 import StarIcon from '@mui/icons-material/Star';
-//import { outlinedInputClasses } from '@mui/material/OutlinedInput';
-//import { createTheme, ThemeProvider, useTheme } from '@mui/material/styles';
 import CardMedia from '@mui/material/CardMedia';
 import EditIcon from '@mui/icons-material/Edit';  // Import the EditIcon
 
@@ -287,6 +278,8 @@ const Profile = () => {
                 </Box>
               </ThemeProvider>
                 <Button 
+                component={Link} 
+                to={'/signin'}
                 variant="contained" 
                 fullWidth
                 type="submit"

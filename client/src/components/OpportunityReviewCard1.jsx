@@ -10,9 +10,6 @@ import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { Hidden } from '@mui/material';
-import Paragraph from './Paragraph'
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -89,16 +86,13 @@ export default function OpportunityReviewCard1() {
 
        
       />
-          <Typography paragraph>Method:</Typography>
+         <Typography paragraph><b>Venue: Central Park, Main Entrance </b> </Typography>
+          <Typography paragraph><b>Number of Volunteers Needed: 50</b> </Typography>
           
-          <Typography paragraph>
-            Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over
-            medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
-            occasionally until lightly browned, 6 to 8 minutes. Transfer shrimp to a
-            large plate and set aside, leaving chicken and chorizo in the pan. Add
-            pimentón, bay leaves, garlic, tomatoes, onion, salt and pepper, and cook,
-            stirring often until thickened and fragrant, about 10 minutes. Add
-            saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
+          <Typography paragraph>         
+
+          <b>Description: </b> 
+          Join us for a day of community service and environmental stewardship at Central Park! Our Community Clean-Up Day aims to beautify our local park, promote environmental awareness, and foster a sense of community pride. Volunteers of all ages are welcome to participate, and no prior experience is necessary.
           </Typography>
           
           </CardContent>

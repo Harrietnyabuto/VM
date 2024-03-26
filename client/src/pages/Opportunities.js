@@ -1,27 +1,13 @@
-import { Box,Button , Grid,styled, Paper, alpha} from '@mui/material';
-import Sidebar from "../components/SideBar"
-import { useTheme, } from '@mui/material/styles';
-import { Link } from 'react-router-dom'
-import Card from '@mui/material/Card';
+import { Box, Grid,styled, alpha} from '@mui/material';
+import Sidebar from "../components/SideBar";
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 import OpportunityReviewCard from '../components/OpportunityReviewCard';
 import OpportunityReviewCard1 from '../components/OpportunityReviewCard1';
 import OpportunityReviewCard2 from '../components/OpportunityReviewCard2';
 import OpportunityReviewCard3 from '../components/OpportunityReviewCard3';
 import OpportunityReviewCard4 from '../components/OpportunityReviewCard4';
 import OpportunityReviewCard5 from '../components/OpportunityReviewCard5';
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -67,7 +53,7 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
 
 
 const Opportunities = () => {
-  const theme = useTheme();
+ 
   return (
   <Box m="20px">
     <Box height="75vh">
@@ -106,7 +92,7 @@ const Opportunities = () => {
   
       </Grid>
           
-          <Grid item xs={3} sx={{ marginTop: '-19rem',marginLeft: 'auto', textAlign: 'right' , height: 400, width:100,marginLeft:'34rem'}}>
+          <Grid item xs={3} sx={{ marginTop: '-19rem', textAlign: 'right' , height: 400, width:100,marginLeft:'34rem'}}>
           <div>      
             <OpportunityReviewCard3 />            
           </div>

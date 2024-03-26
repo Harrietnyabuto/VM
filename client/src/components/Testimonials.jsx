@@ -25,12 +25,12 @@ const images = [
     imgPath: Img,
   },
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    label: 'VolunteerMe, Kenya',
     imgPath: Img1,
       
   },
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    label: 'VolunteerMe, Kenya',
     imgPath: Img2
      
   },
@@ -59,7 +59,6 @@ function Testimonials() {
         sx={{
             display: 'flex',
             flexDirection: 'column',
-            display: 'flex',
             textAlign: 'center',
             justifyContent: 'center',
             alignItems: 'center',

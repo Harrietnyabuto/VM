@@ -13,6 +13,7 @@ import Schedule from './pages/Schedule';
 import Connect from './pages/Connect';
 import Profile from './pages/Profile';
 import Logout from './pages/Logout'
+import RSVP from './pages/RSVP'
 
 function App() {
   return (
@@ -75,6 +76,14 @@ function App() {
         <Route path="/connect" element={<Connect />} />
         <Route path="/profile" element={<Profile />} />
         <Route 
+        path="/rsvp" 
+        element={
+          <>
+          <Navbar /> 
+          <RSVP/>
+        </>
+        }/>
+        <Route 
         path="/logout" 
         element={
           <>
@@ -85,6 +94,7 @@ function App() {
         } 
         />
       </Routes>
+     
     </BrowserRouter>
   );
 }

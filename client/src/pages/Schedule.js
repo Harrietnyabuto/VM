@@ -9,17 +9,6 @@ import Typography from '@mui/material/Typography';
 import Calender from '../components/DateCalendarViews';
 import Countdown from '../components/Countdown';
 
-class App extends React.Component {
-  render() {
-      return (
-          <div>
-              <h1>My Countdown App</h1>
-              <Countdown timeTillDate="2024-03-15" timeFormat="YYYY-MM-DD" />
-          </div>
-      );
-  }
-}
-
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -61,7 +50,7 @@ const Schedule = () => {
       </Typography>    
         <Button 
             component={Link} 
-            to={'/signin'}
+            to={'/rsvp'}
             variant='contained'
             sx={{
               ml: 58,
@@ -114,7 +103,7 @@ const Schedule = () => {
       </Typography>    
         <Button 
             component={Link} 
-            to={'/signin'}
+            to={'/rsvp'}
             variant='contained'
             sx={{
               ml: 58,
@@ -166,7 +155,7 @@ const Schedule = () => {
       </Typography>    
       <Button 
             component={Link} 
-            to={'/signin'}
+            to={'/rsvp'}
             variant='contained'
             sx={{
               ml: 58,
@@ -217,7 +206,7 @@ const Schedule = () => {
       </Typography>  
       <Button 
             component={Link} 
-            to={'/signin'}
+            to={'/rsvp'}
             variant='contained'
             sx={{
               ml: 58,
@@ -269,7 +258,7 @@ const Schedule = () => {
       </Typography>  
       <Button 
             component={Link} 
-            to={'/signin'}
+            to={'/rsvp'}
             variant='contained'
             sx={{
                 ml: 58,
